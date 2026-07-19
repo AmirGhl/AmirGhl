@@ -1,0 +1,87 @@
+<svg width="640" height="320" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .lbl { font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 600; }
+    .pct { font-family: 'JetBrains Mono', 'Courier New', monospace; font-weight: 500; }
+  </style>
+  <defs>
+    <linearGradient id="skCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0A0F1C" stop-opacity="0.92"/>
+    </linearGradient>
+    <radialGradient id="skGlow" cx="10%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="barGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="skFrame"><rect width="640" height="320" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#skFrame)">
+    <rect width="640" height="320" fill="url(#skCard)" stroke="#1E293B" stroke-width="1.2"/>
+    <rect width="640" height="320" fill="url(#skGlow)"/>
+
+    <text x="32" y="46" class="pct" font-size="11" fill="#38BDF8" letter-spacing="0.08em">PROFICIENCY</text>
+    <text x="32" y="74" class="lbl" font-size="19" fill="#F8FAFC">Where I spend my time</text>
+
+    <!-- Skill rows: label, track, animated fill, percent -->
+    <g transform="translate(32,104)">
+      <!-- React -->
+      <text y="0" class="lbl" font-size="13" fill="#E2E8F0">React / Next.js</text>
+      <rect y="10" width="576" height="8" rx="4" fill="#1E293B"/>
+      <rect y="10" height="8" rx="4" fill="url(#barFill)" filter="url(#barGlow)">
+        <animate attributeName="width" values="0;542;542" keyTimes="0;0.9;1" dur="1.4s" begin="0.2s" fill="freeze"/>
+      </rect>
+      <text x="576" y="6" text-anchor="end" class="pct" font-size="12" fill="#94A3B8">94%</text>
+
+      <!-- TypeScript -->
+      <g transform="translate(0,42)">
+        <text y="0" class="lbl" font-size="13" fill="#E2E8F0">TypeScript</text>
+        <rect y="10" width="576" height="8" rx="4" fill="#1E293B"/>
+        <rect y="10" height="8" rx="4" fill="url(#barFill)" filter="url(#barGlow)">
+          <animate attributeName="width" values="0;513;513" keyTimes="0;0.9;1" dur="1.4s" begin="0.4s" fill="freeze"/>
+        </rect>
+        <text x="576" y="6" text-anchor="end" class="pct" font-size="12" fill="#94A3B8">89%</text>
+      </g>
+
+      <!-- UI Engineering -->
+      <g transform="translate(0,84)">
+        <text y="0" class="lbl" font-size="13" fill="#E2E8F0">UI Engineering &amp; Systems</text>
+        <rect y="10" width="576" height="8" rx="4" fill="#1E293B"/>
+        <rect y="10" height="8" rx="4" fill="url(#barFill)" filter="url(#barGlow)">
+          <animate attributeName="width" values="0;530;530" keyTimes="0;0.9;1" dur="1.4s" begin="0.6s" fill="freeze"/>
+        </rect>
+        <text x="576" y="6" text-anchor="end" class="pct" font-size="12" fill="#94A3B8">92%</text>
+      </g>
+
+      <!-- Performance -->
+      <g transform="translate(0,126)">
+        <text y="0" class="lbl" font-size="13" fill="#E2E8F0">Performance Tuning</text>
+        <rect y="10" width="576" height="8" rx="4" fill="#1E293B"/>
+        <rect y="10" height="8" rx="4" fill="url(#barFill)" filter="url(#barGlow)">
+          <animate attributeName="width" values="0;496;496" keyTimes="0;0.9;1" dur="1.4s" begin="0.8s" fill="freeze"/>
+        </rect>
+        <text x="576" y="6" text-anchor="end" class="pct" font-size="12" fill="#94A3B8">86%</text>
+      </g>
+
+      <!-- Node / API -->
+      <g transform="translate(0,168)">
+        <text y="0" class="lbl" font-size="13" fill="#E2E8F0">Node.js &amp; API Design</text>
+        <rect y="10" width="576" height="8" rx="4" fill="#1E293B"/>
+        <rect y="10" height="8" rx="4" fill="url(#barFill)" filter="url(#barGlow)">
+          <animate attributeName="width" values="0;437;437" keyTimes="0;0.9;1" dur="1.4s" begin="1s" fill="freeze"/>
+        </rect>
+        <text x="576" y="6" text-anchor="end" class="pct" font-size="12" fill="#94A3B8">76%</text>
+      </g>
+    </g>
+
+    <line x1="32" y1="290" x2="608" y2="290" stroke="#1E293B"/>
+    <text x="32" y="310" class="pct" font-size="10.5" fill="#475569">SELF-ASSESSED · UPDATED QUARTERLY</text>
+  </g>
+</svg>

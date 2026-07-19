@@ -1,0 +1,52 @@
+<svg width="1400" height="140" viewBox="0 0 1400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fadeMask" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="15%" stop-color="white" stop-opacity="1"/>
+      <stop offset="85%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="edgeFade">
+      <rect width="1400" height="140" fill="url(#fadeMask)"/>
+    </mask>
+    <filter id="candleGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <g mask="url(#edgeFade)">
+    <g stroke="#22C55E" stroke-width="2" filter="url(#candleGlow)" opacity="0.85">
+      <line x1="80" y1="30" x2="80" y2="110"><animate attributeName="y1" values="30;22;30" dur="6s" repeatCount="indefinite"/></line>
+      <rect x="72" y="55" width="16" height="30" fill="#22C55E"/>
+    </g>
+    <g stroke="#EF4444" stroke-width="2" filter="url(#candleGlow)" opacity="0.8">
+      <line x1="220" y1="40" x2="220" y2="100"/>
+      <rect x="212" y="50" width="16" height="24" fill="#EF4444"/>
+    </g>
+    <g stroke="#22C55E" stroke-width="2" filter="url(#candleGlow)" opacity="0.9">
+      <line x1="360" y1="20" x2="360" y2="95"><animate attributeName="y2" values="95;104;95" dur="7s" repeatCount="indefinite"/></line>
+      <rect x="352" y="45" width="16" height="34" fill="#22C55E"/>
+    </g>
+    <g stroke="#EF4444" stroke-width="2" filter="url(#candleGlow)" opacity="0.75">
+      <line x1="1020" y1="35" x2="1020" y2="105"/>
+      <rect x="1012" y="55" width="16" height="26" fill="#EF4444"/>
+    </g>
+    <g stroke="#22C55E" stroke-width="2" filter="url(#candleGlow)" opacity="0.85">
+      <line x1="1160" y1="25" x2="1160" y2="100"><animate attributeName="y1" values="25;33;25" dur="8s" repeatCount="indefinite"/></line>
+      <rect x="1152" y="48" width="16" height="30" fill="#22C55E"/>
+    </g>
+    <g stroke="#22C55E" stroke-width="2" filter="url(#candleGlow)" opacity="0.8">
+      <line x1="1300" y1="30" x2="1300" y2="98"/>
+      <rect x="1292" y="52" width="16" height="28" fill="#22C55E"/>
+    </g>
+
+    <g fill="#60A5FA">
+      <circle cx="500" cy="50" r="3" opacity="0.6"><animate attributeName="cy" values="50;30;50" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="620" cy="90" r="2.4" opacity="0.5"><animate attributeName="cy" values="90;70;90" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="40" r="2.8" opacity="0.6"><animate attributeName="cy" values="40;60;40" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="75" r="2" opacity="0.5"><animate attributeName="cy" values="75;55;75" dur="6.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <path d="M480,70 C560,55 640,85 720,60 C800,35 880,70 960,55" fill="none" stroke="#3B82F6" stroke-width="1.5" opacity="0.4" stroke-dasharray="4 6"/>
+  </g>
+</svg>

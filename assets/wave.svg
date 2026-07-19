@@ -1,0 +1,25 @@
+<svg width="1400" height="90" viewBox="0 0 1400 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.9">
+    <path fill="none" stroke="url(#waveGrad)" stroke-width="1.5">
+      <animate attributeName="d" dur="6s" repeatCount="indefinite"
+        values="
+          M0,45 C 233,10 466,80 700,45 C 933,10 1166,80 1400,45;
+          M0,45 C 233,80 466,10 700,45 C 933,80 1166,10 1400,45;
+          M0,45 C 233,10 466,80 700,45 C 933,10 1166,80 1400,45"/>
+    </path>
+    <path fill="none" stroke="#1E293B" stroke-width="1" opacity="0.7">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+        values="
+          M0,55 C 233,25 466,85 700,55 C 933,25 1166,85 1400,55;
+          M0,55 C 233,85 466,25 700,55 C 933,85 1166,25 1400,55;
+          M0,55 C 233,25 466,85 700,55 C 933,25 1166,85 1400,55"/>
+    </path>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap');
+    .initials { font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 700; }
+  </style>
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="220" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <radialGradient id="coreGrad" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </radialGradient>
+    <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.35"/>
+    </radialGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <circle cx="110" cy="110" r="104" fill="url(#avatarGlow)" filter="url(#softBlur)"/>
+
+  <circle cx="110" cy="110" r="92" fill="url(#coreGrad)" stroke="#1E293B" stroke-width="1"/>
+
+  <circle cx="110" cy="110" r="100" fill="none" stroke="url(#ringGrad)" stroke-width="2.5"
+          stroke-linecap="round" stroke-dasharray="8 10" opacity="0.85">
+    <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="24s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="110" cy="110" r="82" fill="none" stroke="#1E293B" stroke-width="1" opacity="0.6"/>
+
+  <text x="110" y="128" text-anchor="middle" class="initials" font-size="52" fill="#F8FAFC">AG</text>
+
+  <circle cx="196" cy="110" r="4" fill="#60A5FA">
+    <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="24s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="1400" height="180" viewBox="0 0 1400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="mesh1" cx="12%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mesh2" cx="45%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mesh3" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="meshBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+    <clipPath id="meshFrame"><rect width="1400" height="180" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#meshFrame)">
+    <rect width="1400" height="180" fill="#030712"/>
+    <g filter="url(#meshBlur)">
+      <rect width="1400" height="180" fill="url(#mesh1)">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="10s" repeatCount="indefinite"/>
+      </rect>
+      <rect width="1400" height="180" fill="url(#mesh2)">
+        <animate attributeName="opacity" values="1;0.6;1" dur="12s" repeatCount="indefinite"/>
+      </rect>
+      <rect width="1400" height="180" fill="url(#mesh3)">
+        <animate attributeName="opacity" values="0.6;0.9;0.6" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1399" height="179" rx="20" fill="none" stroke="#1E293B" stroke-width="1"/>
+</svg>

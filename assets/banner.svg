@@ -1,0 +1,131 @@
+<svg width="1400" height="460" viewBox="0 0 1400 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+    .title { font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+    .subtitle { font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 500; letter-spacing: 0.01em; }
+    .mono { font-family: 'JetBrains Mono', 'Courier New', monospace; font-weight: 500; letter-spacing: 0.08em; }
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="55%" stop-color="#060B18"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#2563EB" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="titleFill" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="55%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+
+    <linearGradient id="chartStroke" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#3B82F6" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#60A5FA" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="blurSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <filter id="blurTight" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#93C5FD" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="vignette" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#030712" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <clipPath id="frame">
+      <rect x="0" y="0" width="1400" height="460" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1400" height="460" fill="url(#bg)"/>
+    <rect width="1400" height="460" fill="url(#grid)"/>
+
+    <!-- Ambient glow orbs -->
+    <circle cx="230" cy="120" r="220" fill="url(#glow1)" filter="url(#blurSoft)">
+      <animate attributeName="cx" values="230;270;230" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1180" cy="360" r="260" fill="url(#glow2)" filter="url(#blurSoft)">
+      <animate attributeName="cy" values="360;320;360" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.95;0.6" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="40" r="160" fill="url(#glow1)" filter="url(#blurSoft)" opacity="0.5">
+      <animate attributeName="opacity" values="0.35;0.6;0.35" dur="11s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Floating particles -->
+    <g fill="#60A5FA">
+      <circle cx="120" cy="90" r="2" opacity="0.7"><animate attributeName="cy" values="90;60;90" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="260" cy="330" r="1.6" opacity="0.6"><animate attributeName="cy" values="330;300;330" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="980" cy="70" r="2.2" opacity="0.8"><animate attributeName="cy" values="70;100;70" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="150" r="1.8" opacity="0.5"><animate attributeName="cy" values="150;180;150" dur="10s" repeatCount="indefinite"/></circle>
+      <circle cx="1300" cy="380" r="2" opacity="0.7"><animate attributeName="cy" values="380;350;380" dur="7.5s" repeatCount="indefinite"/></circle>
+      <circle cx="60" cy="400" r="1.6" opacity="0.55"><animate attributeName="cy" values="400;370;400" dur="8.5s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="410" r="1.8" opacity="0.6"><animate attributeName="cy" values="410;385;410" dur="9.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Signature: self-drawing market trace, quiet nod to trading platforms -->
+    <g filter="url(#blurTight)" opacity="0.9">
+      <path d="M -20 300 L 90 300 L 150 260 L 230 285 L 300 200 L 380 225 L 460 150 L 560 180 L 660 110 L 760 140 L 860 95 L 980 130 L 1080 80 L 1200 115 L 1320 70 L 1420 95"
+            fill="none" stroke="url(#chartStroke)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            stroke-dasharray="2200" stroke-dashoffset="2200">
+        <animate attributeName="stroke-dashoffset" from="2200" to="0" dur="3.2s" fill="freeze" begin="0.3s"/>
+      </path>
+      <path d="M -20 300 L 90 300 L 150 260 L 230 285 L 300 200 L 380 225 L 460 150 L 560 180 L 660 110 L 760 140 L 860 95 L 980 130 L 1080 80 L 1200 115 L 1320 70 L 1420 95 L 1420 460 L -20 460 Z"
+            fill="url(#chartFill)" opacity="0.8"/>
+    </g>
+
+    <rect width="1400" height="460" fill="url(#vignette)"/>
+
+    <!-- Eyebrow -->
+    <text x="700" y="150" text-anchor="middle" class="mono" font-size="13" fill="#38BDF8" opacity="0.9">FRONTEND ENGINEER · REACT / NEXT.JS / TYPESCRIPT</text>
+
+    <!-- Title -->
+    <text x="700" y="235" text-anchor="middle" class="title" font-size="72" fill="url(#titleFill)">Amir Gholami</text>
+
+    <!-- Subtitle -->
+    <text x="700" y="280" text-anchor="middle" class="subtitle" font-size="19" fill="#94A3B8">Building modern experiences for developers &amp; traders.</text>
+
+    <!-- CTA buttons -->
+    <g>
+      <rect x="546" y="320" width="150" height="46" rx="12" fill="#2563EB"/>
+      <rect x="546" y="320" width="150" height="46" rx="12" fill="url(#glow1)" opacity="0.5"/>
+      <text x="621" y="348" text-anchor="middle" class="subtitle" font-size="14" fill="#F8FAFC">View Projects</text>
+
+      <rect x="712" y="320" width="150" height="46" rx="12" fill="#0B1220" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="787" y="348" text-anchor="middle" class="subtitle" font-size="14" fill="#F8FAFC">Get In Touch</text>
+    </g>
+  </g>
+
+  <!-- outer hairline frame -->
+  <rect x="0.75" y="0.75" width="1398.5" height="458.5" rx="22" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg width="1400" height="40" viewBox="0 0 1400 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dividerLine" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="88%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dot-glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <line x1="0" y1="20" x2="1400" y2="20" stroke="url(#dividerLine)" stroke-width="1"/>
+  <circle cx="700" cy="20" r="3" fill="#60A5FA" filter="url(#dot-glow)">
+    <animate attributeName="cx" values="80;1320;80" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="20" r="2.5" fill="#F8FAFC">
+    <animate attributeName="cx" values="80;1320;80" dur="10s" repeatCount="indefinite"/>
+  </circle>
+</svg>

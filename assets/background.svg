@@ -1,0 +1,34 @@
+<svg width="1400" height="220" viewBox="0 0 1400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1400" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0A1120"/>
+    </linearGradient>
+    <radialGradient id="ag1" cx="15%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ag2" cx="85%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ablur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+    <pattern id="agrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#93C5FD" stroke-opacity="0.04"/>
+    </pattern>
+    <clipPath id="aframe"><rect width="1400" height="220" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#aframe)">
+    <rect width="1400" height="220" fill="url(#abg)"/>
+    <rect width="1400" height="220" fill="url(#agrid)"/>
+    <circle cx="210" cy="66" r="180" fill="url(#ag1)" filter="url(#ablur)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1190" cy="154" r="200" fill="url(#ag2)" filter="url(#ablur)">
+      <animate attributeName="opacity" values="0.8;0.5;0.8" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <rect x="0.5" y="0.5" width="1399" height="219" rx="20" fill="none" stroke="#1E293B" stroke-width="1"/>
+</svg>

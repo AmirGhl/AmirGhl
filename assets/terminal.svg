@@ -1,0 +1,80 @@
+<svg width="720" height="300" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Inter:wght@500&amp;display=swap');
+    .m { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+    .lbl { font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 500; }
+  </style>
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1526"/>
+      <stop offset="100%" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="termStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="termGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="termShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="termFrame"><rect width="720" height="300" rx="16"/></clipPath>
+
+    <!-- reveal masks for each typed line, staggered -->
+    <clipPath id="l1"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;330;330" keyTimes="0;0.9;1" dur="0.9s" begin="0.4s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l2"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;300;300" keyTimes="0;0.9;1" dur="0.8s" begin="1.4s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l3"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;360;360" keyTimes="0;0.9;1" dur="0.9s" begin="2.3s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l4"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;280;280" keyTimes="0;0.9;1" dur="0.7s" begin="3.3s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l5"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;250;250" keyTimes="0;0.9;1" dur="0.7s" begin="4.1s" fill="freeze"/></rect></clipPath>
+    <clipPath id="l6"><rect x="0" y="0" width="0" height="20"><animate attributeName="width" values="0;170;170" keyTimes="0;0.9;1" dur="0.5s" begin="4.9s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <g filter="url(#termShadow)" clip-path="url(#termFrame)">
+    <rect width="720" height="300" fill="url(#termBg)" stroke="url(#termStroke)" stroke-width="1.2"/>
+    <rect width="720" height="300" fill="url(#termGlow)"/>
+
+    <!-- title bar -->
+    <rect width="720" height="42" fill="#0A0F1C"/>
+    <line x1="0" y1="42" x2="720" y2="42" stroke="#1E293B"/>
+    <circle cx="26" cy="21" r="6" fill="#EF4444" opacity="0.85"/>
+    <circle cx="46" cy="21" r="6" fill="#F59E0B" opacity="0.85"/>
+    <circle cx="66" cy="21" r="6" fill="#22C55E" opacity="0.85"/>
+    <text x="360" y="26" text-anchor="middle" class="m" font-size="12" fill="#64748B">amir@dev — zsh — 80×24</text>
+
+    <!-- body -->
+    <g transform="translate(30,80)" class="m" font-size="15">
+      <text y="0" fill="#4ADE80">amir<tspan fill="#64748B">@</tspan>dev <tspan fill="#64748B">~</tspan> <tspan fill="#38BDF8">%</tspan></text>
+
+      <g clip-path="url(#l1)">
+        <text x="0" y="36" fill="#F8FAFC">whoami --role frontend --stack react,next,ts</text>
+      </g>
+
+      <g clip-path="url(#l2)">
+        <text x="0" y="72" fill="#93C5FD">→ Amir Gholami, Frontend Engineer</text>
+      </g>
+
+      <g clip-path="url(#l3)">
+        <text x="0" y="108" fill="#93C5FD">→ Focused on FinTech &amp; trading platforms</text>
+      </g>
+
+      <g clip-path="url(#l4)">
+        <text x="0" y="144" fill="#F8FAFC">status --current</text>
+      </g>
+
+      <g clip-path="url(#l5)">
+        <text x="0" y="180" fill="#4ADE80">✓ building Traders Royal</text>
+      </g>
+
+      <g clip-path="url(#l6)">
+        <text x="0" y="216" fill="#64748B"># open to collabs</text>
+      </g>
+
+      <rect x="0" y="204" width="9" height="18" fill="#38BDF8">
+        <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.51;1;1" dur="1s" begin="5.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <rect x="0.75" y="0.75" width="718.5" height="298.5" rx="16" fill="none" stroke="#1E293B" stroke-width="1.2"/>
+</svg>
